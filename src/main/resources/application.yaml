@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Jackson-DateTime-Demo
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+server:
+  servlet:
+    context-path: /api
+  port: 8080
