@@ -9,6 +9,6 @@ public class DisableNetworkCaching implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         java.security.Security.setProperty("networkaddress.cache.ttl", "0");
-        java.security.Security.setProperty("networkaddress.cache.negative", "false");
+        java.security.Security.setProperty("networkaddress.cache.negative", "0");
     }
 }
